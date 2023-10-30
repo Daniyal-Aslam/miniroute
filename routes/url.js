@@ -7,5 +7,6 @@ router.post("/",handleGenerateUrl);
 
 router.get("/:shortId",handlerGoto);
 
+
 router.get("/analytics/:shortId",handlerGetanalytics)
 module.exports = router

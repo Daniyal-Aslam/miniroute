@@ -39,5 +39,6 @@ async function handlerGetanalytics(req,res){
         analytics: result.visitHistory
     })
 }
+ 
 
 module.exports = {handleGenerateUrl,handlerGetanalytics,handlerGoto};
