@@ -7,8 +7,18 @@
     <title>Home page</title>
 </head>
 <body>
-    <% urls.forEach(url=> { %> 
-        <li><%= url.shortId %> </li>
-    <%  }) %> 
+
+ <h1>Miniroute</h1>
+ <p>MiniRoute is a user-friendly URL shortener app that simplifies the process of creating compact and easy-to-share web links.</p>
+   
+ <% if(locals.id){ %>
+    <p>URL is Generate you can access it <a href="http://localhost:9990/<%=id%>">http://localhost:9990/<%=id%></a></p>
+ <% }%> 
+ <form method="POST" action="/">
+        <label for="">Please Enter a URL</label>
+        <input type="text" name="url" placeholder="http://facebook.com">
+        <button type="submit">Generate URL</button>
+    </form>  
+     
 </body>
 </html>
