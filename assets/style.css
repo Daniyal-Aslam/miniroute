@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* MINIROUTE CONTAINER STYLES BEGIN */
+.miniroute-section{ 
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+.miniroute-container{
+    background: #fff;
+    border-radius: 10px;
+    max-width:500px;
+    width: 100%;
+    display: grid;
+    height: 100%;
+    place-content: center;
+    margin: auto; 
+    padding: 20px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.miniroute-container h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+.miniroute-container form{
+display: flex; 
+flex-direction: column;
+gap: 15px;
+position: relative;
+margin-top: 20px;
+}
+.miniroute-container form input{
+    padding: 10px 5px;
+    border: 0;
+    outline: 0;
+    border-bottom: 1.5px solid #efefef;
+}
+.miniroute-container form  button[type="submit"]{
+    background: #000;
+    padding: 10px 30px;
+    border: 1.5px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.6s ease-in-out;
+}
+.miniroute-container form small{
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+}
+.miniroute-container form  button[type="submit"]:hover{
+    background: transparent;
+    color: #000;
+}
+.miniroute-container p{
+    font-size: 14px;
+    margin: 15px 0;
+}
+.miniroute-container label{
+    font-size: 15px;
+    font-weight: 600;
+}
+/* MINIROUTE CONTAINER STYLES END */

@@ -3,22 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="description" content="MiniRoute is a user-friendly URL shortener app that simplifies the process of creating compact and easy-to-share web links.">
+    <meta name="keywords" content="Miniroute, URL shortener, User-friendly, Web links, Short links, Compact URLs, Shareable links, Simplified URL creation">
+    <title>Miniroute</title> 
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
+<section class="miniroute-section">
+    <div class="miniroute-container">
  <h1>Miniroute</h1>
  <p>MiniRoute is a user-friendly URL shortener app that simplifies the process of creating compact and easy-to-share web links.</p>
    
+ <form method="POST" id="miniroute_form" action="/">
+        <label for="">Please Enter a URL</label>
+        <input type="text" id="url_box" name="url" placeholder="http://facebook.com">
+        <button id="submit_button" type="submit">Generate URL</button>
+    </form>  
+</div>
+</section>
  <% if(locals.id){ %>
     <p>URL is Generate you can access it <a href="http://localhost:9990/<%=id%>">http://localhost:9990/<%=id%></a></p>
  <% }%> 
- <form method="POST" action="/">
-        <label for="">Please Enter a URL</label>
-        <input type="text" name="url" placeholder="http://facebook.com">
-        <button type="submit">Generate URL</button>
-    </form>  
-     
+
+ <script src="./app.js"></script>
 </body>
 </html>

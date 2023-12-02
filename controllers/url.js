@@ -28,8 +28,7 @@ async function handlerGoto(req,res){
                 },
             },
         }
-    );
-    res.redirect(entry.redirectUrl);
+    ); 
 }
 
 async function handlerGetanalytics(req,res){
